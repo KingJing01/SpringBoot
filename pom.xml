@@ -24,14 +24,22 @@
             <artifactId>spring-boot-starter-activemq</artifactId>  
         </dependency>  
 	</dependencies>
-	<!-- Spring Boot maven 打包插件 -->
+	<!-- Spring Boot maven 插件 debug 和热部署 -->
 	<build>
 		<finalName>SpringBoot</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.6.RELEASE</version>
+                    </dependency>
+                </dependencies>
 			</plugin>
+			
 		</plugins>
 	</build>
 </project>
