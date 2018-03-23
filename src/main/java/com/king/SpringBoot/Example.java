@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @ClassName: Example 
  * @Description:  
  * @author king
- * @date 2018��3��23�� ����10:40:06
+ * @date 2018/3/23 10:40:06
  */
 //@RestController = @Controller + @ResponseBody  
 @RestController
